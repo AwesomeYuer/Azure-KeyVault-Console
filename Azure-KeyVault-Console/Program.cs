@@ -22,7 +22,10 @@
                  }
             };
 
-            DefaultAzureCredential credential = new DefaultAzureCredential();
+            DefaultAzureCredential credential = new DefaultAzureCredential
+                                                    (
+                                                        //true
+                                                    );
             var client = new SecretClient(new Uri(kvUri), credential, options);
             var input = string.Empty;
             var i = 0;
