@@ -35,7 +35,7 @@
                 {
                     Console.Write($"Setting a secret in {keyVaultName} called '{secretName}' with the value '{input}' ...");
                     client.SetSecret(secretName, input);
-                    Console.WriteLine(" done.");
+                    Console.WriteLine("done.");
                 }
                 KeyVaultSecret secret = client.GetSecret(secretName);
                 Console.WriteLine($"Retrieving your secret from {keyVaultName}.{secretName}.value:{secret.Value}");
