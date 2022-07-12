@@ -45,7 +45,7 @@
             while ((input = Console.ReadLine()) != "q");
             Console.Write("Deleting your secret from " + keyVaultName + " ...");
 
-            client.StartDeleteSecret(secretName);
+            //client.StartDeleteSecret(secretName);
 
             //System.Threading.Thread.Sleep(5000);
             Console.WriteLine(" bye.");
